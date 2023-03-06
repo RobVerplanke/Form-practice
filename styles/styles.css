@@ -1,0 +1,36 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    display: flex;
+
+}
+
+.left-side{
+    flex: 1;
+
+}
+
+.right-side{
+    flex: 1;
+    border: solid 1px red;
+    display: flex;
+    flex-direction: column;
+}
+
+.head{
+    flex: 1;
+
+}
+
+.main{
+    flex: 1;
+
+}
+
+.footer{
+    flex: 1;
+
+}
