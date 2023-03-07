@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="styles/styles.css">
     <title>Form experiment</title>
 </head>
+<script src="script/script.js" defer></script>
 <body>
     <div class="left-side">
         <img src="img/halie-west-25xggax4bSA-unsplash.jpg" alt="Background image" 
@@ -31,29 +32,31 @@
         <main class="main">
             <div class="container">
                 <div class="form-title">Let's do this!</div>
-                <form action="">
+                <form action="" method="POST">
                     <div class="left-form">
                         <label for="first-name">FIRST NAME</label>
-                        <input type="text" id="first-name" name="firstName">
+                        <input type="text" id="first-name" name="firstName" minlength="2" maxlength="20">
                         <label for="email">EMAIL</label>
                         <input type="email" id="email" name="email">
-                        <label for="pass">PASSWORD</label>
-                        <input type="password" id="pass" name="password">
+                        <label for="pass1">PASSWORD</label>
+                        <input type="password" class="error" id="pass1" name="pass1">
+                        <span id="message"></span>
+
                     </div>
                     <div class="right-form">
                         <label for="first-name">LAST NAME</label>
-                        <input type="text" id="last-name" name="lastName">
+                        <input type="text" id="last-name" name="lastName" minlength="2" maxlength="50">
                         <label for="phone-number">PHONE NUMBER</label>
                         <input type="text" id="phone-number" name="phoneNumber">
-                        <label for="confirmed-pass">CONFIRM PASSWORD</label>
-                        <input type="password" id="confirmed-pass" name="confPassword">
+                        <label for="pass2">CONFIRM PASSWORD</label>
+                        <input type="password" class="error" id="pass2" name="pass2">
                     </div>
                 </form>
             </div>
         </main>
 
         <footer class="footer">
-            <button>
+            <button type="submit" onclick="matchPassword()">
                 Create Account
             </button><br>
             Already have an account? <a href="">log in</a>

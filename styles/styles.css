@@ -80,7 +80,7 @@ body{
 
 .main{
     display: flex;
-    height:300px;
+    height:260px;
     padding: 20px 20px 20px 40px;
     box-shadow: 0px 4px 8px 1px rgb(221, 221, 221);
 
@@ -98,6 +98,10 @@ body{
     display: flex;
 }
 
+.container{
+    width: 100%;
+}
+
 .form-title{
     padding: 0px 0px 20px 0px;
 
@@ -107,24 +111,49 @@ body{
 }
 
 .left-form{
+    width: 50%;
+
     display: flex;
     flex-direction: column;
-    width: 50%;
+
+    margin-right: 20px;
 }
 
 .right-form{
     display: flex;
     flex-direction: column;
-    width: 50%;
+    align-items: flex-start;
+
+    width: 100%;
 
 }
 
 input{
-    height: 25px;
+    height: 26px;
+    width: 250px;
     margin:3px 40px 25px 0;
     border: solid 1px #E5E7EB;
     border-radius: 4px;
 }
+
+input[type="password"]{
+    margin-bottom: 0;
+}
+
+input:focus{
+    outline: solid 1px blue;
+    box-shadow: 5px 5px 5px rgb(228, 228, 228);
+}
+
+#message{
+    font-weight: 100;
+    color: red;
+}
+
+.error{
+    outline: solid 1px red;
+}
+
 
 .footer{
     height:300px;
@@ -149,7 +178,7 @@ input{
 
 .footer > button{
     height: 50px;
-    width: 200px;
+    width: 220px;
     margin-bottom: 25px;
 
     background-color: #596D48;
