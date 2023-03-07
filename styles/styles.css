@@ -8,6 +8,8 @@ body{
 
 }
 
+
+
 @font-face {
     font-family: "Odin-logo";
     src: url("/fonts/Norse-Bold.otf");
@@ -38,6 +40,7 @@ body{
 .credits{
     min-width: 450px;
     bottom: 20px;
+
     position: absolute;
     text-align: center;
     
@@ -76,19 +79,61 @@ body{
 }
 
 .main{
+    display: flex;
     height:300px;
+    padding: 20px 20px 20px 40px;
     box-shadow: 0px 4px 8px 1px rgb(221, 221, 221);
+
+    font-family: Arial, Helvetica, sans-serif;
+    color: #333;
+    font-size:.7em;
+    letter-spacing: .1em;
+    font-weight: 600;
+
 
 }
 
-.footer{
-    display: inline-block;
-    flex-direction: column;
+.main form{
+    width: 100%;
+    display: flex;
+}
 
+.form-title{
+    padding: 0px 0px 20px 0px;
+
+    color: #333;
+    font-size: 1.4rem;
+    letter-spacing: normal;
+}
+
+.left-form{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+}
+
+.right-form{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+
+}
+
+input{
+    height: 25px;
+    margin:3px 40px 25px 0;
+    border: solid 1px #E5E7EB;
+    border-radius: 4px;
+}
+
+.footer{
     height:300px;
     margin-right: 40px;
     padding-left: 40px;
     padding-top: 30px;
+
+    display: inline-block;
+    flex-direction: column;
    
     font-family: Arial, Helvetica, sans-serif;
     color: #333;
